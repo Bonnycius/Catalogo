@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Catálogo de Produtos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #474747;
+      margin: 0;
+      padding: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 40px;
+    }
+
+    .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .produto {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: 250px;
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .produto img {
+      width: 100%;
+      border-radius: 5px;
+    }
+
+    .produto h2 {
+      font-size: 1.2em;
+      margin: 10px 0;
+    }
+
+    .produto p {
+      color: #555;
+      font-size: 0.95em;
+    }
+
+    table {
+      width: 80%;
+      margin: 40px auto 20px auto;
+      border-collapse: collapse;
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+
+    th {
+      background-color: #333;
+      color: white;
+    }
+
+    td {
+      background-color: #fafafa;
+    }
+
+    .btn-container {
+      width: 100%;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .btn-whatsapp {
+      background-color: #25D366;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-whatsapp:hover {
+      background-color: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Catálogo de Produtos</h1>
+
+  <div class="catalogo">
+    <div class="produto">
+      <img src="IMG-20250829-WA0020.jpg" alt="Produto 1">
+      <h2>Suco Nectar de Laranja</h2>
+    </div>
+    <div class="produto">
+      <img src="IMG-20250829-WA0019.jpg" alt="Produto 2">
+      <h2>Suco Nectar de Uva</h2>
+    </div>
+    <div class="produto">
+      <img src="IMG-20250829-WA0021.jpg" alt="Produto 2">
+      <h2>Linha 310 mL</h2>
+    </div>
+    <div class="produto">
+      <img src="IMG-20250829-WA0022.jpg" alt="Produto 2">
+      <h2>Linha 3 Litros</h2>
+    </div>
+    <div class="produto">
+      <img src="IMG-20250829-WA0018.jpg" alt="Produto 2">
+      <h2>Linha 5 Litros</h2>
+    </div>
+    <!-- Adicione mais produtos aqui -->
+
+    <!-- Botão abaixo das imagens -->
+     <div class="btn-container">
+    <a href="https://wa.me/5543991624471?text=Olá%20quero%20comprar%20um%20produto" target="_blank">
+      <button class="btn-whatsapp">Comprar pelo WhatsApp</button>
+    </a>
+  </div>
+  </div>
+
+  <!-- Tabela de preços -->
+  <table>
+    <tr>
+      <th>Produto</th>
+      <th>Sabor</th>
+      <th>Preço</th>
+      <th>Disponibilidade</th>
+    </tr>
+    <tr>
+      <td>Suco 310 ml</td>
+        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>R$ 4,70</td>
+      <td>Em estoque</td>
+    </tr>
+    <tr>
+      <td>Suco 900 ml</td>
+        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>R$ 10,40</td>
+      <td>Em estoque</td>
+    </tr>
+    <tr>
+      <td>Suco 1,5 L</td>
+        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>R$ 16,40</td>
+      <td>Em estoque</td>
+    </tr>
+    <tr>
+      <td>Suco 2,0 L</td>
+        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>R$ 20,20</td>
+      <td>Em estoque</td>
+    </tr>
+    <tr>
+      <td>Suco 3,0 L</td>
+        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>R$ 27,60</td>
+      <td>Em estoque</td>
+    </tr>
+    <tr>
+      <td>Suco 5,0 L</td>
+        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>R$ 39,90</td>
+      <td>Em estoque</td>
+    </tr>
+    <!-- Adicione mais linhas conforme necessário -->
+  </table>
+
+  <!-- Botão abaixo da tabela -->
+  <div class="btn-container">
+    <a href="https://wa.me/5543991624471?text=Olá%20quero%20comprar%20um%20produto" target="_blank">
+      <button class="btn-whatsapp">Comprar pelo WhatsApp</button>
+    </a>
+  </div>
+
+</body>
+</html>
