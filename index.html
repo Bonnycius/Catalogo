@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -12,10 +11,24 @@
       padding: 20px;
     }
 
-    h1 {
-      text-align: center;
-      color: #ffffff;
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
       margin-bottom: 40px;
+    }
+
+    .header-container img {
+      width: 80px;
+      height: 80px;
+      border-radius: 45px;
+      object-fit: cover;
+    }
+
+    h1 {
+      color: #ffffff;
+      margin: 0;
     }
 
     .catalogo {
@@ -95,7 +108,10 @@
 </head>
 <body>
 
-  <h1>Catálogo de Produtos</h1>
+  <div class="header-container">
+    <img src="vinicius.jpg" alt="Foto do Vinicius">
+    <h1>Catálogo de Produtos</h1>
+  </div>
 
   <div class="catalogo">
     <div class="produto">
@@ -107,28 +123,25 @@
       <h2>Suco Nectar de Uva</h2>
     </div>
     <div class="produto">
-      <img src="IMG-20250829-WA0021.jpg" alt="Produto 2">
+      <img src="IMG-20250829-WA0021.jpg" alt="Produto 3">
       <h2>Linha 310 mL</h2>
     </div>
     <div class="produto">
-      <img src="IMG-20250829-WA0022.jpg" alt="Produto 2">
+      <img src="IMG-20250829-WA0022.jpg" alt="Produto 4">
       <h2>Linha 3 Litros</h2>
     </div>
     <div class="produto">
-      <img src="IMG-20250829-WA0018.jpg" alt="Produto 2">
+      <img src="IMG-20250829-WA0018.jpg" alt="Produto 5">
       <h2>Linha 5 Litros</h2>
     </div>
-    <!-- Adicione mais produtos aqui -->
 
-    <!-- Botão abaixo das imagens -->
-     <div class="btn-container">
-    <a href="https://wa.me/5543991624471?text=Olá%20quero%20comprar%20um%20produto" target="_blank">
-      <button class="btn-whatsapp">Comprar pelo WhatsApp</button>
-    </a>
-  </div>
+    <div class="btn-container">
+      <a href="https://wa.me/5543991624471?text=Olá%20quero%20comprar%20um%20produto" target="_blank">
+        <button class="btn-whatsapp">Comprar pelo WhatsApp</button>
+      </a>
+    </div>
   </div>
 
-  <!-- Tabela de preços -->
   <table>
     <tr>
       <th>Produto</th>
@@ -138,44 +151,42 @@
     </tr>
     <tr>
       <td>Suco 310 ml</td>
-        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>Goiaba, Laranja, Maracujá, Uva</td>
       <td>R$ 4,70</td>
       <td>Em estoque</td>
     </tr>
     <tr>
       <td>Suco 900 ml</td>
-        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>Goiaba, Laranja, Maracujá, Uva</td>
       <td>R$ 10,40</td>
       <td>Em estoque</td>
     </tr>
     <tr>
       <td>Suco 1,5 L</td>
-        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>Goiaba, Laranja, Maracujá, Uva</td>
       <td>R$ 16,40</td>
       <td>Em estoque</td>
     </tr>
     <tr>
       <td>Suco 2,0 L</td>
-        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>Goiaba, Laranja, Maracujá, Uva</td>
       <td>R$ 20,20</td>
       <td>Em estoque</td>
     </tr>
     <tr>
       <td>Suco 3,0 L</td>
-        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>Goiaba, Laranja, Maracujá, Uva</td>
       <td>R$ 27,60</td>
       <td>Em estoque</td>
     </tr>
     <tr>
       <td>Suco 5,0 L</td>
-        <td>Goiaba, Laranja, Maracujá, Uva</td>
+      <td>Goiaba, Laranja, Maracujá, Uva</td>
       <td>R$ 39,90</td>
       <td>Em estoque</td>
     </tr>
-    <!-- Adicione mais linhas conforme necessário -->
   </table>
 
-  <!-- Botão abaixo da tabela -->
   <div class="btn-container">
     <a href="https://wa.me/5543991624471?text=Olá%20quero%20comprar%20um%20produto" target="_blank">
       <button class="btn-whatsapp">Comprar pelo WhatsApp</button>
